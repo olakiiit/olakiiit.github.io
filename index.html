@@ -118,7 +118,7 @@
     <div class="controls">
         <button onclick="prevPage()">←</button>
         <button class="toc-button" onclick="toggleTOC()">☰</button>
-        <input type="number" id="pageNumberInput" min="1" max="226" placeholder="Номер стр.">
+        <input type="number" id="pageNumberInput" min="1" max="488" placeholder="Номер стр.">
         <button onclick="goToPage()">Перейти</button>
         <button onclick="nextPage()">→</button>
     </div>
@@ -152,7 +152,7 @@
 
     <script>
         let currentPage = 1;
-        const totalPages = 226;
+        const totalPages = 488;
 
         function updateImage() {
             const imgElement = document.getElementById('pageImage');
@@ -181,7 +181,7 @@
                 currentPage = pageNumber;
                 updateImage();
             } else {
-                alert("Введите корректный номер страницы (от 1 до 226).");
+                alert("Введите корректный номер страницы (от 1 до 488).");
             }
         }
 
